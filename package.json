@@ -1,0 +1,27 @@
+{
+  "name": "now-postgraphile",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "now dev",
+    "deploy": "now",
+    "build": "node -r dotenv/config -r esm ./scripts/generateCache.js"
+  },
+  "keywords": [
+    "graphql",
+    "graphile",
+    "postgraphile",
+    "postgres"
+  ],
+  "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "now": "^19.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "postgraphile": "^4.7.0"
+  }
+}
