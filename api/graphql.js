@@ -6,9 +6,9 @@ const { DATABASE_SCHEMAS = 'public', DATABASE_URL } = process.env
 const schemas = DATABASE_SCHEMAS.split(',')
 
 const options = {
-	watchPg: false,
-	graphiql: false,
-	graphqlRoute: '/api/graphql'
+  watchPg: false,
+  graphiql: false,
+  graphqlRoute: '/api/graphql'
 }
 
 const pg = postgraphile(DATABASE_URL, schemas, {
@@ -17,5 +17,5 @@ const pg = postgraphile(DATABASE_URL, schemas, {
 })
 
 module.exports = (req, res, next) => {
-	pg(req, res, next)
+  pg(req, res, next)
 }
