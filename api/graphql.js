@@ -11,11 +11,7 @@ const options = {
   graphqlRoute: '/api/graphql'
 }
 
-const pg = postgraphile(DATABASE_URL, schemas, {
+module.exports = postgraphile(DATABASE_URL, schemas, {
   ...options,
   readCache
 })
-
-module.exports = (req, res, next) => {
-  pg(req, res, next)
-}
