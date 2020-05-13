@@ -54,7 +54,14 @@ You should be able to run a query like this [here](http://localhost:5000/graphiq
 
 ## now
 
-First, you need to expose you environment variable to now:
+First, we are going to setup a non-fucntioning deploy, just so now knows about our app (and creates the `.vercel` dir.):
+
+```sh
+./node_modules/.bin/now
+```
+
+
+Next, you need to expose you environment variable to now:
 
 ```sh
 now env add DATABASE_URL
@@ -66,7 +73,7 @@ You can also use `now secret add database-url` and `npm run deploy -- -e DATABAS
 
 ### dev
 
-Now that it's all setup, you can run `npm start` to run a local dev copy of the example app that's here. I used [Graphql Playground](https://github.com/prisma-labs/graphql-playground) because I like it better than [GraphiQL](https://github.com/graphql/graphiql). Verify it's working locally, and you're ready to deploy.
+Now that it's all setup, you can run `npm start` to run a local dev copy of the example app that's here. I used [Graphql Playground](https://github.com/prisma-labs/graphql-playground) because I like it better than [GraphiQL](https://github.com/graphql/graphiql). Verify it's working locally, and you're ready for a (functioning) deploy.
 
 
 ### deploy
