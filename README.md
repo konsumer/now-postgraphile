@@ -26,7 +26,7 @@ export PGDATABASE=YOUR_DB_NAME
 export DATABASE_URL="postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}:${PGPORT}/${PGDATABASE}"
 
 # create a .env file with above settings for local dev-tools
-echo -e "DATABASE_URL=\"${DATABASE_URL}\"\nDATABASE_SCHEMA=\"public\"" > .env
+echo -e "DATABASE_URL=\"${DATABASE_URL}\"\nDATABASE_SCHEMAS=\"public\"" > .env
 
 createdb $PGDATABASE
 psql < example.sql
