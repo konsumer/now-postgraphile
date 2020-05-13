@@ -54,7 +54,7 @@ You should be able to run a query like this [here](http://localhost:5000/graphiq
 
 ## now
 
-First, we are going to setup a non-fucntioning deploy, just so now knows about our app (and creates the `.vercel` dir.):
+First, we are going to setup a non-functioning deploy, just so now knows about our app (and creates the `.vercel` dir.):
 
 ```sh
 ./node_modules/.bin/now
